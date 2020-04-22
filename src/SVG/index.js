@@ -1,0 +1,134 @@
+/* eslint-disable react/display-name */
+import React from 'react';
+
+import AIAnalytics from './AIAnalytics';
+import VoiceMessage from './VoiceMessage';
+import Activity from './Activity';
+import Attachments from './Attachments'
+import Bids from './Bids';
+import Budget from './Budget'; 
+import BunkerManagement from './BunkerManagement';
+import Calendar from './Calendar';
+import Camera from './Camera';
+import Chair from './Chair';
+import Chat from './Chat';
+import ChatBot from './ChatBot'
+import CheckList from './CheckList';
+import CloseTicket from './CloseTicket';
+import CollabarationSuite from './CollabarationSuite';
+import Cubeic from './Cubeic';
+import Design from './Design';
+import Doctor from './Doctor';
+import EMS from './EMS';
+import Event from './Event';
+import EventData from './Eventdata'
+import Expenses from './Expenses'
+import Fb from './Fb';
+import FixTicket from './FixTicket';
+import Groups from './Groups';
+import Hexabee from './Hexabee';
+import Hospital from './Hospital';
+import Instagram from './Instagram';
+import Link from './Link'
+import LinkedIn from './LinkedIn';
+import Location from './Location';
+import Meetings from './Meetings';
+import Notes from './Notes';
+import Nurse from './Nurse';
+import Patient from './Patient';
+import Planning from './Planning';
+import Po from './Po';
+import Polls from './Polls';
+import PrintMedia from './PrintMedia';
+import Projects from './Projects';
+import Promotion from './Promotion';
+import Proposal from './Proposal';
+import Publishing from './Publishing';
+import PurchasenBid from './PurchasenBid';
+import Pyramid from './Pyramid';
+import Questions from './Questions';
+import Quotation from './Quotation';
+import Remaindar from './Remaidar';
+import Sales from './Sales';
+import Shapes from './Shapes';
+import Status from './Status';
+import Tags from './Tags';
+import Target from './Target';
+import Tasks from './Tasks';
+import Ticket from './Ticket';
+import Todos from './Todos';
+import Twitter from './Twitter';
+import VideoCalling from './VideoCalling';
+import Wheel from './Wheel';
+import Workflow from './Workflow';
+import Workspace from './Workspace';
+import Youtube from './Youtube';
+
+const IconList = {
+	'AIAnalytics':(props) => <AIAnalytics {...props}/>,
+	'VoiceMessage':(props) => <VoiceMessage {...props}/>,
+	'Activity':(props) => <Activity {...props}/>,
+	'Attachments':(props) => <Attachments {...props}/>,
+	'Bids':(props) => <Bids {...props}/>,
+	'Budget':(props) => <Budget {...props}/>,
+	'BunkerManagement':(props) => <BunkerManagement {...props}/>,
+	'Calendar':(props) => <Calendar {...props}/>,
+	'Camera':(props) => <Camera {...props}/>,
+	'Chair':(props) => <Chair {...props}/>,
+	'Chat':(props) => <Chat {...props}/>,
+    'ChatBot':(props) => <ChatBot {...props}/>,
+    'CheckList':(props) => <CheckList {...props}/>,
+	'CloseTicket':(props) => <CloseTicket {...props}/>,
+	'CollaborationSuite':(props) => <CollabarationSuite {...props}/>,
+	'Cubeic':(props) => <Cubeic {...props}/>,
+	'Design':(props) => <Design {...props}/>,
+	'Doctor':(props) => <Doctor {...props}/>,
+	'EMS':(props) => <EMS {...props}/>,
+	'Event':(props) => <Event {...props}/>,
+	'Eventdata':(props) => <EventData {...props}/>,
+	'Expenses':(props) => <Expenses {...props}/>,
+	'Fb':(props) => <Fb {...props}/>,
+	'FixTicket':(props) => <FixTicket {...props}/>,
+	'Groups':(props) => <Groups {...props}/>,
+	'HexaBee':(props) => <Hexabee {...props}/>,
+	'Hospital':(props) => <Hospital {...props}/>,
+	'Instagram':(props) => <Instagram {...props}/>,
+	'Link':(props) => <Link {...props}/>,
+	'LinkedIn':(props) => <LinkedIn {...props}/>,
+	'Location':(props) => <Location {...props}/>,
+	'Meetings':(props) => <Meetings {...props}/>,
+	'Notes':(props) => <Notes {...props}/>,
+	'Nurse':(props) => <Nurse {...props}/>,
+	'Patient':(props) => <Patient {...props}/>,
+	'Planning':(props) => <Planning {...props}/>,
+	'Po':(props) => <Po {...props}/>,
+	'Polls':(props) => <Polls {...props}/>,
+	'PrintMedia':(props) => <PrintMedia {...props}/>,
+	'Projects':(props) => <Projects {...props}/>,
+	'Promotion':(props) => <Promotion {...props}/>,
+	'Proposal':(props) => <Proposal {...props}/>,
+	'Publishing':(props) => <Publishing {...props}/>,
+	'PurchasenBid':(props) => <PurchasenBid {...props}/>,
+	'Pyramid':(props) => <Pyramid {...props}/>,
+	'Questions':(props) => <Questions {...props}/>,
+	'Quotation':(props) => <Quotation {...props}/>,
+	'Remainder':(props) => <Remaindar {...props}/>,
+    'Sales':(props) => <Sales {...props}/>,
+    'Shapes':(props) => <Shapes {...props}/>,
+    'Status':(props) => <Status {...props}/>,
+    'Tags':(props) => <Tags {...props}/>,
+    'Target':(props) => <Target {...props}/>,
+    'Tasks':(props) => <Tasks {...props}/>,
+    'Ticket':(props) => <Ticket {...props}/>,
+    'Twitter':(props) => <Twitter {...props}/>,
+    'VideoCalling':(props) => <VideoCalling {...props}/>,
+    'Wheel':(props) => <Wheel {...props}/>,
+    'Workflow':(props) => <Workflow {...props}/>,
+    'Workspace':(props) => <Workspace {...props}/>,
+    'Youtube':(props) => <Youtube {...props}/>,
+};
+const Icon = (props) => {
+	return IconList[props.name] ? IconList[props.name](props) : IconList['blur'](props);
+};
+
+export default Icon;
